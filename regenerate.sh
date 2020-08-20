@@ -17,5 +17,5 @@ rm -fr ${wv_tmp_dir}/nifi/.swagger-codegen \
   && rm -fr ${wv_tmp_dir}/nifi.conf.json
 
 echo Moving documentations files to root dirs
-rm -fr ${wv_tmp_dir}/docs && mv ${wv_tmp_dir}/nifi/docs .
+rm -fr ${wv_tmp_dir}/docs && rm -rf ./docs && mv ${wv_tmp_dir}/nifi/docs .
 rm -fr ${wv_tmp_dir}/README.md && mv ${wv_tmp_dir}/nifi/README.md .
